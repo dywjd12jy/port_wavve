@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/style.css" type="css/text"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <title>Wave 홈페이지</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="hd_top">
+                <p>로그인</p>
+                <p>이용권</p>
+                <p>이벤트</p>
+            </section>
+            <section class="hd_bottom">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="상단logo">
+                </div>
+                <ul class="nav">
+                    <li>홈</li>
+                    <li>카테고리</li>
+                    <li>LIVE</li>
+                    <li>MY</li>
+                </ul>
+                <div class="serch">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="36px" height="36px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve">
+                    <g>
+                        <path fill="none" d="M0,0h36v36H0V0z"/>
+                        <g>
+                            <path fill="none" stroke="#A5A5A5" stroke-width="2" d="M22.443,15.443c0,3.866-3.135,7-7,7c-3.865,0-7-3.135-7-7
+                                c0-3.865,3.135-7,7-7C19.309,8.443,22.443,11.578,22.443,15.443z"/>
+                            <path fill="none" stroke="#A5A5A5" stroke-width="2" stroke-linecap="round" d="M20.521,21.305L26,27"/>
+                        </g>
+                    </g>
+                    </svg>
+                    <p>검색하기</p>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./img/slide_img_1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/slide_img_2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/slide_img_3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/slide_img_4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/slide_img_5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./img/slide_img_6.jpg" alt=""></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </main>
+    <div class="contents"> 
+        <div class="cont1"></div>
+        <div class="cont2"></div>
+        <div class="cont3"></div>
+        <div class="cont4"></div> 
+        <div class="cont5"></div>
+        <div class="cont6"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        slidesPerView: 2,
+        // freeMode: true,
+        centeredSlides: true,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script>
+</body>
+</html>

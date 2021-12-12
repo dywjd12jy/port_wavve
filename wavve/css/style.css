@@ -1,0 +1,58 @@
+.contents {
+  max-width: 1280px;
+  max-height: 530px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+html {
+  background-color: #333;
+  color: #c2c2c2;
+  font-weight: 500;
+  font-size: 6.25%;
+}
+
+body {
+  font-size: 16rem;
+}
+
+header {
+  display: flex;
+}
+header section {
+  width: 100%;
+  display: flex;
+}
+header .hd_top {
+  width: 100%;
+  height: 50px;
+}
+header .hd_top ul {
+  display: flex;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main .swiper {
+  height: 30vw;
+}
+main .swiper .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+main .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+  height: 30vw;
+}
+main .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
