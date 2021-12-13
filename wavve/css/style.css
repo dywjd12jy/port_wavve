@@ -56,3 +56,7 @@ main .swiper .swiper-wrapper .swiper-slide {
 main .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
+
+.swiper-button-prev {
+  width: 80%;
+}
